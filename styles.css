@@ -1,0 +1,76 @@
+body {
+    margin: 0px;
+    overflow: hidden; /* To prevent scrollbars */
+    padding: 0px;
+
+}
+
+video {
+    width: 100%;
+    height: auto;
+    max-width: 100%; /* To ensure the video doesn't exceed the viewport width */
+    margin: 0px auto; /* Center the video horizontally */
+
+}
+
+.container {
+    max-width: 1000px;
+    padding: 0px;
+
+}
+
+.navbar {
+    max-width: 1000px; /* Set your desired maximum width */
+    margin-left: auto;
+    margin-right: auto;
+    color: black;
+}
+
+.navbar-brand{
+    font-family: 'Bogista';
+    font-size: clamp(16px, 4vw, 32px);
+    margin-left: 42%;
+    text-transform: uppercase;
+}
+
+.navbar-toggler{
+    border: none;
+}
+
+.navbar-header{
+    width: 100%;
+    justify-content: center;
+}
+
+@font-face {
+    font-family: 'BebasKai'; /* Choose a name for your font */
+    src: url('/fonts/BebasKai.ttf') format('.ttf'); /* Update the path to your font file */
+    /* You can include additional font formats if needed, e.g., woff, ttf, eot */
+}
+
+@font-face {
+    font-family: 'BebasNeue'; /* Choose a name for your font */
+    src: url('/fonts/BebasNeue-Regular.ttf') format('.ttf'); /* Update the path to your font file */
+    /* You can include additional font formats if needed, e.g., woff, ttf, eot */
+}
+@font-face {
+    font-family: 'Bogista'; /* Choose a name for your font */
+    src: url('/fonts/Bogista.ttf') format('.ttf'); /* Update the path to your font file */
+    /* You can include additional font formats if needed, e.g., woff, ttf, eot */
+}
+@font-face {
+    font-family: 'Cocogoose'; /* Choose a name for your font */
+    src: url('/fonts/Cocogoose-Pro-Regular-trial.ttf') format('.ttf'); /* Update the path to your font file */
+    /* You can include additional font formats if needed, e.g., woff, ttf, eot */
+}
+@font-face {
+    font-family: 'Evogria'; /* Choose a name for your font */
+    src: url('/fonts/Evogria.otf') format('.otf'); /* Update the path to your font file */
+    /* You can include additional font formats if needed, e.g., woff, ttf, eot */
+}
+@font-face {
+    font-family: 'HeadingNow'; /* Choose a name for your font */
+    src: url('/fonts/HeadingNowTrial-44Regular.ttf') format('.ttf'); /* Update the path to your font file */
+    /* You can include additional font formats if needed, e.g., woff, ttf, eot */
+}
+
