@@ -13,28 +13,106 @@ video {
 
 }
 
+.video-container {
+    position: relative;
+}
+
+
+/* Styling for the overlay text */
+.jacklohmar-title {
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    color: white;
+
+    font-family: 'HeadingNow';
+    font-size: clamp(22px, 4vw, 40px);
+    text-transform: uppercase;
+}
+
+.resume-title{
+    position: absolute;
+    top: 2vh; /* Adjust the top position as needed */
+    left: 10%; /* Center horizontally */
+    color: white;
+
+    font-family: 'HeadingNow';
+    font-size: clamp(16px, 4vw, 20px);
+    text-transform: uppercase;
+}
+
+.contact-title{
+    position: absolute;
+    top: 2vh; /* Adjust the top position as needed */
+    right: 10%; /* Center horizontally */
+    color: white;
+
+    font-family: 'HeadingNow';
+    font-size: clamp(16px, 4vw, 20px);
+    text-transform: uppercase;
+}
+
+@media (max-width: 600px) {
+    .resume-title, .contact-title, .jacklohmar-title{
+        display: none;
+    }
+}
+
 .container {
     max-width: 1000px;
     padding: 0px;
 
 }
 
+.itemx{
+    width:100%;
+    align-items: center;
+
+}
+
 .navbar {
     max-width: 1000px; /* Set your desired maximum width */
-    margin-left: auto;
-    margin-right: auto;
-    color: black;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding: 0px;
+    width: 100%;
+}
+@media (min-width: 599px) {
+    .navbar{
+        display: none;
+    }
+}
+
+.navbar-collapse{
+    margin-top: 50px;
+    padding: 10px;
+    width: 100%;
+    background-color: black;
+    text-align: center;
+    font-family: 'HeadingNow';
+    font-size: clamp(20px, 4vw, 28px);
 }
 
 .navbar-brand{
-    font-family: 'Bogista';
-    font-size: clamp(16px, 4vw, 32px);
-    margin-left: 42%;
+    position: absolute;
+    top: 10px; /* Adjust the top position as needed */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Center horizontally */
+    color: white;
+
+    font-family: 'HeadingNow';
+    font-size: clamp(22px, 4vw, 40px);
     text-transform: uppercase;
 }
 
 .navbar-toggler{
     border: none;
+    position: absolute;
+    top: 1.25vh; /* Adjust the top position as needed */
+    right: 3%; /* Center horizontally */
+    color: white;
+
 }
 
 .navbar-header{
@@ -54,8 +132,8 @@ video {
     /* You can include additional font formats if needed, e.g., woff, ttf, eot */
 }
 @font-face {
-    font-family: 'Bogista'; /* Choose a name for your font */
-    src: url('/fonts/Bogista.ttf') format('.ttf'); /* Update the path to your font file */
+    font-family: 'Oswald'; /* Choose a name for your font */
+    src: url('/fonts/Oswald-VariableFont_wght') format('.ttf'); /* Update the path to your font file */
     /* You can include additional font formats if needed, e.g., woff, ttf, eot */
 }
 @font-face {
