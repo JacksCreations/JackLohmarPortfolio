@@ -1,30 +1,47 @@
 body {
-    margin: 0px;
+    margin: auto;
     overflow: hidden; /* To prevent scrollbars */
-    padding: 0px;
-
+    padding: auto;
+    max-width: 1000px;
 }
 
-video {
+#gif, #video {
     width: 100%;
     height: auto;
-    max-width: 100%; /* To ensure the video doesn't exceed the viewport width */
+    max-width: 1000px; /* To ensure the video doesn't exceed the viewport width */
     margin: 0px auto; /* Center the video horizontally */
 
 }
 
-.video-container {
+.backdrop-container{
     position: relative;
+    max-width: 1000px;
+    width: 100%;
+}
+
+.comp-navbar{
+    position: relative; /*this needed to be a relative position in order to fix contact to the top right*/
+    height: 100px;
+    width: 100%;
+    max-width: 1000px;
+    background-color: black;
+}
+
+@media (max-width: 600px) {
+    .jacklohmar-title, .contact-title, .resume-title {
+        display: none;
+    }
 }
 
 
 /* Styling for the overlay text */
 .jacklohmar-title {
     position: absolute;
-    top: 10px; /* Adjust the top position as needed */
+    top: 0; /* Adjust the top position as needed */
     left: 50%; /* Center horizontally */
     transform: translateX(-50%); /* Center horizontally */
     color: white;
+    margin-top: 10px;
 
     font-family: 'HeadingNow';
     font-size: clamp(22px, 4vw, 40px);
@@ -33,9 +50,12 @@ video {
 
 .resume-title{
     position: absolute;
-    top: 2vh; /* Adjust the top position as needed */
-    left: 10%; /* Center horizontally */
+    margin-top: 2.5vh; /* Adjust the top position as needed */
+    margin-left: 10%;
     color: white;
+
+    top:0;
+    left:0;
 
     font-family: 'HeadingNow';
     font-size: clamp(16px, 4vw, 20px);
@@ -44,9 +64,12 @@ video {
 
 .contact-title{
     position: absolute;
-    top: 2vh; /* Adjust the top position as needed */
-    right: 10%; /* Center horizontally */
+    margin-top: 2.5vh; /* Adjust the top position as needed */
+    margin-right: 10%;
     color: white;
+
+    top:0;
+    right:0;
 
     font-family: 'HeadingNow';
     font-size: clamp(16px, 4vw, 20px);
@@ -65,11 +88,6 @@ video {
 
 }
 
-.itemx{
-    width:100%;
-    align-items: center;
-
-}
 
 .navbar {
     max-width: 1000px; /* Set your desired maximum width */
@@ -136,16 +154,7 @@ video {
     src: url('/fonts/Oswald-VariableFont_wght') format('.ttf'); /* Update the path to your font file */
     /* You can include additional font formats if needed, e.g., woff, ttf, eot */
 }
-@font-face {
-    font-family: 'Cocogoose'; /* Choose a name for your font */
-    src: url('/fonts/Cocogoose-Pro-Regular-trial.ttf') format('.ttf'); /* Update the path to your font file */
-    /* You can include additional font formats if needed, e.g., woff, ttf, eot */
-}
-@font-face {
-    font-family: 'Evogria'; /* Choose a name for your font */
-    src: url('/fonts/Evogria.otf') format('.otf'); /* Update the path to your font file */
-    /* You can include additional font formats if needed, e.g., woff, ttf, eot */
-}
+
 @font-face {
     font-family: 'HeadingNow'; /* Choose a name for your font */
     src: url('/fonts/HeadingNowTrial-44Regular.ttf') format('.ttf'); /* Update the path to your font file */
